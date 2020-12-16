@@ -4,7 +4,6 @@ jobs:
   dire_bonjour:
     runs-on: ubuntu-20.04
     steps:
-    - name: Checkout code
-        uses: actions/checkout@v2
+    - uses: actions/checkout@v2
     - run: ls -l # Liste les fichier du répertoire courant
     - run: cat README.md # Affiche le contenu du fichier `README.md` à la base du dépôt
